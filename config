@@ -62,3 +62,12 @@ mail_subject='[Prey] Status Report'
 scp_user='username'
 scp_server='my.server.com'
 scp_path='~'
+
+####################################################################
+# secure email posting -- EXPERIMENTAL!
+####################################################################
+
+# the password is stored base64 encrypted
+# if you wish to generate it by hand, run
+# $ echo -n "password" | openssl enc -base64
+zip_password=''

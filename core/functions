@@ -106,6 +106,10 @@ list_files(){
 	done
 }
 
+make_secure_zip(){
+	`7za a -i $file_list -tzip -p $decoded_zip_pass`
+}
+
 remove_traces(){
 	unset -v traces
 	echo ' -- Dropping all traces!'
